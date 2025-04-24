@@ -1,0 +1,11 @@
+body {
+    font-family: Nunito, 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 95%;
+    padding-bottom: 3em;
+    margin: 0 auto;
+    background-color: #F2F3F4;
+    -webkit-user-select: none;
+    /* Compatibilidad con WebKit */
+    user-select: none;
+    /* Para navegadores modernos */
+  }

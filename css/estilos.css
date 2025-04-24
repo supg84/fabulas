@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body {
+  font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+  width: 85%;
+  margin: 0 auto;
+  background-color: #F2F3F4;
+}
+
+#s1 {font-size: 1.1em;}
+
+article {
+  margin: 10px;
+}
+
+#s2 > details > summary {
+  color: darkblue;
+}
+
+article > h2 {
+  background-color: #F2C1D1;
+  color: white;
+  font-size: 2em;
+  text-shadow:  1px 1px 0.5px #D4AF37, 1px 1px 12px black;
+  font-family: "Fontdiner Swanky", serif;
+  text-align: center;
+  padding: 8px;
+  margin: 2em 20px;
+  border-radius: 6px;
+}
+
+article > img {
+  float: right;
+  width: 25%;
+  height: auto;
+}
+
+article > p {
+  text-align: justify;
+}
+
+article > .destacada::first-letter {
+  font-family: "Times New Roman", serif;
+  font-size: 3em;
+  /* Aumenta el tamaño para que ocupe varias líneas */
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  /* Ajusta el espaciado alrededor de la letra */
+  float: left;
+  /* Hace que el texto fluya alrededor */
+  margin-right: 10px;
+  /* Espacio entre la letra y el texto */
+}
+
+article > p:first-of-type::first-letter {
+  font-family: "Fontdiner Swanky", serif;
+  font-size: 3em;
+  line-height: 1.5;
+  color: white;
+  background-color: #81D8D0;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  padding: 0 7px;
+  float: left;
+  margin-right: 10px;
+}
+
+article > p:last-of-type::after {
+  content: "";
+  display: block;
+  width: 100%;
+  /* Ajusta el tamaño según necesites */
+  height: 50px;
+  /* Alto de la imagen separadora */
+  background-image: url("img/divider.png");
+  /* Ruta de la imagen */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+  /* Espacio entre el párrafo y la imagen */
+  background-size: contain;
+  /*La propiedad background-size: contain; en CSS se usa para ajustar el tamaño de una imagen de fondo de manera que se mantenga completamente visible dentro del contenedor, sin recortarse. En otras palabras, la imagen se escala proporcionalmente para encajar dentro del área definida, pero sin deformarse.*/
+}
+
+.moraleja {
+  width: 80%;
+  margin: 25px auto;
+  background-color: #353839;
+  color: white;
+  font-weight: light;
+  padding: 5px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 1.1em;
+  /* font-variant: small-caps; */
+}
+
+.moraleja::before {
+  content: "Moraleja";
+  font-family: "Fontdiner Swanky", serif;
+  color: #FFE4E1;
+  text-shadow: 0.5px 0.5px 0px #F2C1D1;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 1.1em;
+  display: block;
+  /* Esto fuerza a que "Moraleja" ocupe toda una línea */
+  text-align: center;
+  /* Centra el texto */
+  margin-bottom: 5px;
+  /* Espacio entre el título y el párrafo */
+}
+
+article > address {
+  text-align: right;
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
+  color: blue;
+  font-size: 1.5em;
+ 
+}
+
+pre, code {
+  font-size: 1.05em;
+}
+
+code {
+  font-weight: 500;
+}
+
+kbd {
+  color: #228B22;
+}
+
+h3 {
+  color: fuchsia;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.ejemplo,
+blockquote {
+  font-size: 0.9em;
+  background-color: white;
+  padding: 5px 25px;
+  border-left: #353839 4px solid;
+}
+
+li > ul:first-of-type {
+  font-size: 0.95em;
+  margin-top: 5px;
+}
+
+#s1 > h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+a {
+  color: darkblue;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid darkblue;
+}
+
+a:hover {
+  font-size: 1.1em;
+}
+
+.lista {
+  list-style-type: none;
+  /* padding-left: 0; */
+}
+
+.lista li {
+  margin: 3px 0 10px 0;
+
+}
+
+.lista li::before {
+  content: "✔ ";     /* Se puede poner cualquier icono, emoji o símbolo */
+  color: darkred;   /* Cambia el color */
+  font-size: 18px;    /* Ajusta el tamaño */
+  font-weight: bold;
+  margin-right: 8px;  /* Separa la viñeta del texto */  
+}
+article>img{
+    float: right;
+    width: 25%;
+    height: auto;
+    margin: 10px;
